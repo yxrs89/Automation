@@ -1,0 +1,76 @@
+2019-09-09 17:18:09,735 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2671370506
+
+2019-09-09 17:18:09,735 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2671370506
+
+2019-09-09 17:18:19,994 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.258286953
+
+2019-09-09 17:18:19,994 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.258286953
+
+2019-09-09 17:19:15,403 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2728390694
+
+2019-09-09 17:19:15,405 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2728390694
+
+2019-09-09 17:19:25,679 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2725968361
+
+2019-09-09 17:19:25,680 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2725968361
+
+2019-09-09 17:19:35,952 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2683451176
+
+2019-09-09 17:19:35,952 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2683451176
+
+2019-09-09 17:25:53,459 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2766499519
+
+2019-09-09 17:25:53,460 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2766499519
+
+2019-09-09 17:26:03,746 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2835891247
+
+2019-09-09 17:26:03,748 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2835891247
+
+2019-09-09 17:26:14,023 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2726249695
+
+2019-09-09 17:26:14,023 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2726249695
+
+2019-09-09 17:26:33,034 - Automation - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2847599983
+
+2019-09-09 17:26:33,035 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2847599983
+
+2019-09-09 17:26:43,321 - Automation - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2820019722
+
+2019-09-09 17:26:43,322 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2820019722
+
+2019-09-09 17:26:53,604 - Automation - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2798318863
+
+2019-09-09 17:26:53,605 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2798318863
+
+2019-09-09 17:33:34,174 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2778151035
+
+2019-09-09 17:33:34,175 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2778151035
+
+2019-09-09 17:33:44,452 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2733860016
+
+2019-09-09 17:33:44,453 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2733860016
+
+2019-09-09 17:33:54,729 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2731769085
+
+2019-09-09 17:33:54,730 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2731769085
+
+2019-09-09 17:41:24,688 - Automation - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2890079021
+
+2019-09-09 17:41:24,689 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2890079021
+
+2019-09-09 17:41:34,978 - Automation - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2857348919
+
+2019-09-09 17:41:34,979 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2857348919
+
+2019-09-09 17:41:45,258 - Automation - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2765200138
+
+2019-09-09 17:41:45,259 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='password']，尝试次数-17, 尝试耗时----10.2765200138
+
+2019-09-09 17:44:19,859 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2710061073
+
+2019-09-09 17:44:19,860 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.2710061073
+
+2019-09-09 17:44:48,906 - Automation - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.265474081
+
+2019-09-09 17:44:48,906 - RobotFramework - ERROR : Message: 元素不可获取----//input[@name='mobile']，尝试次数-17, 尝试耗时----10.265474081
+

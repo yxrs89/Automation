@@ -1,0 +1,6 @@
+- {!!python/unicode 'appActivity': !!python/unicode 'com.android.app.ui.activity.InitActivity',
+  !!python/unicode 'appPackage': !!python/unicode 'com.flaginfo.umsapp.aphone.appid111',
+  !!python/unicode 'appWaitActivity': !!python/unicode 'com.android.app.ui.activity.InitActivity',
+  !!python/unicode 'newCommandTimeout': 300, !!python/unicode 'noReset': false, !!python/unicode 'recreateChromeDriverSessions': true,
+  !!python/unicode 'resetKeyboard': true, !!python/unicode 'sessionOverride': true,
+  !!python/unicode 'unicodeKeyboard': true}

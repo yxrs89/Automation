@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?><jmeterTestPlan jmeter="3.2 r1790748" properties="3.2" version="1.2">
+  <hashTree>
+    <TestPlan enabled="true" guiclass="TestPlanGui" testclass="TestPlan" testname="测试计划">
+      <stringProp name="TestPlan.comments"/>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp elementType="Arguments" enabled="true" guiclass="ArgumentsPanel" name="TestPlan.user_defined_variables" testclass="Arguments" testname="用户定义的变量">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"/>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup enabled="false" guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp elementType="LoopController" enabled="true" guiclass="LoopControlPanel" name="ThreadGroup.main_controller" testclass="LoopController" testname="循环控制器">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1491373615000</longProp>
+        <longProp name="ThreadGroup.end_time">1491373615000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"/>
+        <stringProp name="ThreadGroup.delay"/>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments enabled="true" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量">
+          <collectionProp name="Arguments.arguments">
+            <elementProp elementType="Argument" name="licence">
+              <stringProp name="Argument.name">licence</stringProp>
+              <stringProp name="Argument.value">CFMWYCUEZ4PAF5BQPDMBSWHTQ2BRA</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="name">
+              <stringProp name="Argument.name">name</stringProp>
+              <stringProp name="Argument.value">hhhh</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="sign">
+              <stringProp name="Argument.name">sign</stringProp>
+              <stringProp name="Argument.value">ZBHB6E2BEIIFQM2C333Y3IBYMDRBPYHU</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">根据name生成的sign</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="appid">
+              <stringProp name="Argument.name">appid</stringProp>
+              <stringProp name="Argument.value">FAEBYT3KJRVQCBCBYL35BGY</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="sign2">
+              <stringProp name="Argument.name">sign2</stringProp>
+              <stringProp name="Argument.value">SSBVJX7S3FIARNHGNYTSCZJX4SGXWTJG</stringProp>
+              <stringProp name="Argument.desc">根据appid生产的sign</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <ConfigTestElement enabled="true" guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP请求默认值">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">10.0.0.143</stringProp>
+          <stringProp name="HTTPSampler.port">8081</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path"/>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </ConfigTestElement>
+        <hashTree/>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="创建轻应用">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="name">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${name}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">name</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${sign}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">app-service/api/app/insert.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <RegexExtractor enabled="true" guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="正则表达式提取器">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">appid</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;appid&quot;:&quot;(.+?)&quot;</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default"/>
+            <stringProp name="RegexExtractor.match_number">0</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查询轻应用">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${appid}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${sign2}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">app-service/api/app/query.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+          <stringProp name="TestPlan.comments">FAEB2T3KJRVQABCBYL35BEY</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion enabled="true" guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-547797305">&quot;success&quot;:true</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="复制轻应用">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${appid}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${sign2}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">/app-service/api/app/copy.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+          <stringProp name="TestPlan.comments">FAEB2S3KJRVQAACBYL35BFY</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion enabled="true" guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="93029116">appid</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除轻应用">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">FAEBYTDKJRVQCA2BYL35BGQ</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">NXYGUIPF46TQDKLOYZJUHEOJ7BB5UY54</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">/app-service/api/app/delete.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion enabled="true" guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-538673239">success&quot;:true</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查询失败测试">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">FAEB2SLKJRVQADSBYL35BFI</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">JQMRNVAZI5RQNQHNRQORSLTYK2R65Y5N</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">app-service/api/app/query.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion enabled="true" guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1694920780">:&quot;轻应用不存在&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="更新轻应用">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">6FNWFZSXNVOFALRF25DGGFZIMXXT6CRT</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">FAEBYTDKJRVQCA2BYL35BGQ</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="name">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">aaa</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">name</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">app-service/api/app/update.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+          <stringProp name="TestPlan.comments">app-service/api/app/update.do</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="更新轻应用">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">5WY2QLGBJLX5YHGD54DASNSTNHWH5M3N</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">FAEB6TLKJRVQMASBYL35DEI</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="name">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">bbb</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">name</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">app-service/api/app/update.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+          <stringProp name="TestPlan.comments">app-service/api/app/update.do</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="复制页面编辑器下的单个页面">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="pageid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1151</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">pageid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">I2SAB7U7VXSMZ4TWMETPZ3MTDD7V47PF</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">app-service/api/schemaPage/copy.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="设置页面编辑器404 OK">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">FAEB6S3KJRVQMACBYL35DFY</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">44ABT6YRMTLCFZBZR62ANFXJUV6YQT4I</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">app-service/api/schema/acc404.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy enabled="false" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="设置页面编辑器下的子页面为404   OK ">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="pageid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1151</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">pageid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">I2SAB7U7VXSMZ4TWMETPZ3MTDD7V47PF</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">app-service/api/schemaPage/acc404.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector enabled="true" guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"/>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup enabled="true" guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp elementType="LoopController" enabled="true" guiclass="LoopControlPanel" name="ThreadGroup.main_controller" testclass="LoopController" testname="循环控制器">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">4</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">3</stringProp>
+        <longProp name="ThreadGroup.start_time">1491530674000</longProp>
+        <longProp name="ThreadGroup.end_time">1491530674000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"/>
+        <stringProp name="ThreadGroup.delay"/>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments enabled="true" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量">
+          <collectionProp name="Arguments.arguments">
+            <elementProp elementType="Argument" name="licence">
+              <stringProp name="Argument.name">licence</stringProp>
+              <stringProp name="Argument.value">CFMWYCUEZ4PAF5BQPDMBSWHTQ2BRA</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="name">
+              <stringProp name="Argument.name">name</stringProp>
+              <stringProp name="Argument.value">hhhh</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="sign">
+              <stringProp name="Argument.name">sign</stringProp>
+              <stringProp name="Argument.value">ZBHB6E2BEIIFQM2C333Y3IBYMDRBPYHU</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">根据name生成的sign</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="appid">
+              <stringProp name="Argument.name">appid</stringProp>
+              <stringProp name="Argument.value">FAEBYT3KJRVQCBCBYL35BGY</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="sign2">
+              <stringProp name="Argument.name">sign2</stringProp>
+              <stringProp name="Argument.value">SSBVJX7S3FIARNHGNYTSCZJX4SGXWTJG</stringProp>
+              <stringProp name="Argument.desc">根据appid生产的sign</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp elementType="Argument" name="IPADDRESS">
+              <stringProp name="Argument.name">IPADDRESS</stringProp>
+              <stringProp name="Argument.value">app.lapp.tome.im</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <ConfigTestElement enabled="true" guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP请求默认值">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${IPADDRESS}</stringProp>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path"/>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </ConfigTestElement>
+        <hashTree/>
+        <HTTPSamplerProxy enabled="true" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="查询轻应用">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="appid">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${appid}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">appid</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="sign">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${sign2}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sign</stringProp>
+              </elementProp>
+              <elementProp elementType="HTTPArgument" name="licence">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${licence}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">licence</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"/>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">/api/app/query.do</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+          <stringProp name="TestPlan.comments">FAEB2T3KJRVQABCBYL35BEY</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion enabled="true" guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-547797305">&quot;success&quot;:true</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy enabled="true" guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="天气预报请求1">
+          <elementProp elementType="Arguments" enabled="true" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="用户定义的变量">
+            <collectionProp name="Arguments.arguments">
+              <elementProp elementType="HTTPArgument" name="city">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">南京</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">city</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.sojson.com</stringProp>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.protocol"/>
+          <stringProp name="HTTPSampler.contentEncoding"/>
+          <stringProp name="HTTPSampler.path">/open/api/weather/json.shtml</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"/>
+          <stringProp name="HTTPSampler.connect_timeout"/>
+          <stringProp name="HTTPSampler.response_timeout"/>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector enabled="true" guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">F:\response.xml</stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector enabled="true" guiclass="StatVisualizer" testclass="ResultCollector" testname="聚合报告">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"/>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector enabled="true" guiclass="StatVisualizer" testclass="ResultCollector" testname="聚合报告">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">D:\Python27\lib\site-packages\Automation\resource\jmeter\output\appService@@1527583103_report.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector enabled="true" guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">D:\Python27\lib\site-packages\Automation\resource\jmeter\output\appService@@1527583103.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench enabled="true" guiclass="WorkBenchGui" testclass="WorkBench" testname="工作台">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
